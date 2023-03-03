@@ -31,10 +31,10 @@ services:
       envVarKey: MYSQL_PASSWORD
 - type: pserv
   name: mysql-wordpress
-  repo: https://github.com/render-examples/mysql.git
+  repo: https://github.com/Touchcore-Global/render-wordpress
   env: docker
   plan: standard
-  autoDeploy: false
+  autoDeploy: true
   disk:
     name: mysql-wordpress
     mountPath: /var/lib/mysql
