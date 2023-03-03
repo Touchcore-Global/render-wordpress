@@ -1,6 +1,6 @@
 # You can change this to a different version of Wordpress available at
 # https://hub.docker.com/_/wordpress
-FROM wordpress:apache
+FROM wordpress:5.9.3-php8.1-apache
 
 RUN apt-get update && apt-get install -y magic-wormhole
 RUN echo "ServerName 127.0.0.1" >> /etc/apache2/apache2.conf
